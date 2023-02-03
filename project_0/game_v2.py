@@ -20,16 +20,20 @@ def random_predict(number: int = 1, number_range: int = 101) -> int:
     predict_number = number_range // 2
     min_number = 1 #минимальное значение при поиске числа
     max_number = number_range #максимальное значение при поиске числа
+    
     while True:
         count += 1
+        
         if number == predict_number:
             break  # выход из цикла если угадали
+        
         if number < predict_number: #если загадываемое число меньше предполагаемого, то максимум равен предполагаемому числу
             max_number = predict_number
             predict_number = predict_number // 2  # а предполагаемое число делим пополам
         else:
             min_number = predict_number #если загадываемое число больше предполагаемого, то миниумм равен предполагаемому числу
             predict_number = min_number + (max_number-min_number) // 2 #предполагаемое число равно среднему между мин и макс
+            
     return count
 
 
