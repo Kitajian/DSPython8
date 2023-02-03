@@ -2,4 +2,4 @@
 
 # Projects
 
-* [Проект 0. Угадай число]() 
+* [Проект 0. Угадай число](https://github.com/Kitajian/DSPython8/tree/main/project_0) 
